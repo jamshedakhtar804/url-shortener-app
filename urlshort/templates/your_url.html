@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}URL for "{{ code }}"{% endblock %}
+
+{% block main %}
+
+    <div class="text-center mt-5">
+        <div class="p-3 mb-2 mt-5 bg-success text-white">Please copy this URL and paste at search engine to visit the website/file.</div>
+        <div class="h3"></div>
+        <input type="text" value="http://127.0.0.1:5000/{{ code }}" id="myInput">
+        <br>
+        <!-- The button used to copy the text -->
+        <button onclick="myFunction()" class="btn btn-primary bt-lg ">Copy URL</button>
+    </div>
+<!--
+<h1>Your URL</h1>
+
+<h2>{{ code }}</h2>
+-->
+{% endblock %}
